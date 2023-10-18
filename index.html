@@ -12,6 +12,10 @@
     <!-- JAVASCRIPT-->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.4.0/p5.js"></script>
     <script src="js/locomotive-scroll.min.js"></script>
+
+    <link rel="apple-touch-icon" sizes="180x180" href="data/favicon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="data/favicon.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="data/favicon.png">
 </head>
 
 <body data-scroll-container>
@@ -87,10 +91,18 @@
     </div>
 
     <div class="scroll-container">
-        <p id="scroll-text">Projects Projects Projects Projects Projects Projects</p>
-    </div>
+        <div id="scroll-text">
+            <p>Projects</p>
+            <img src="data/index/star.svg">
+            <p>Projects</p>
+            <img src="data/index/star.svg">
+            <p>Projects</p>
+            <img src="data/index/star.svg">
+            <p>Projects</p>
+        </div>
+        </div>
 
-    <div class="grid-container projectIndex" data-scroll data-scroll-direction="top" data-scroll-speed="2">
+    <div class="grid-container projectIndex" data-scroll data-scroll-direction="top" data-scroll-speed="0">
         <!---------------------------------------------1--------------------------------------------->
         <div id="imgIndex1" class="grid-item">
             <div class="imgContainer">
@@ -281,13 +293,22 @@
             </div>
         </div>
         <div id="spanGrid" class="grid-item">
-            <span class="hover-link">See more</span>
+            <span class="hover-link"><a href="indexProjects.html">See more</a></span>
             <img src="data/index/arrowIndex.svg">
         </div>
     </div>
-
-
+    <footer>
+        <div>
+            <p>Laura Pais © 2023</p>
+        </div>
+        <div class="footerContacts">
+            <a  class="hover-link" href="data/CV.pdf"><p>CV</p></a>
+            <a  class="hover-link" href="https://www.linkedin.com/in/laura-pais/"><p>Linkedin</p></a>
+            <a  class="hover-link" href="https://www.behance.net/paislaura"><p>Behance</p></a>
+        </div>
+    </footer>
 </main>
+
 
 <div id="cursor"></div>
 <div class="hover">

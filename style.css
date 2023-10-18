@@ -57,7 +57,7 @@ header{
     width: 15vw;
     display: flex;
     align-content: center;
-    justify-content: space-between;
+    justify-content: space-around;
 }
 
 .menuHeader span {
@@ -111,10 +111,11 @@ header{
     display: flex;
     justify-content: space-between;
     height: fit-content;
+    margin-bottom: 10vh;
 }
 
 .aboutIndex p {
-    font-size: calc(30px + 0.2vw);
+    font-size: calc(25px + 0.2vw);
     line-height: 40px;
     margin: 0;
 }
@@ -122,6 +123,7 @@ header{
 .aboutOne {
     width: 50%;
 }
+
 
 .aboutTwo {
     width: 50%;
@@ -139,6 +141,12 @@ header{
     text-transform: uppercase;
     white-space: nowrap;
     width: fit-content;
+    display: flex;
+    align-items: center;
+}
+
+#scroll-text img{
+    margin: 0 1vw;
 }
 
 @-webkit-keyframes text-animation {
@@ -172,7 +180,6 @@ header{
     display: grid;
     grid-gap: 30px;
     grid-template-columns: repeat(4, 1fr);
-    margin-top: 5vh;
     max-width: 100%;
     overflow: hidden;
 }
@@ -202,7 +209,7 @@ header{
 }
 
 .efeito-hover{
-    height: 100%;
+    height: calc(100% - 4px);
     width: 100%;
     position: absolute;
     top: 0;
@@ -295,6 +302,11 @@ header{
 #spanGrid span{
     font-size: calc(42px + 0.2vw);
     line-height: 36px;
+}
+
+#spanGrid a{
+    text-decoration: none;
+    color: #141414;
 }
 
 #spanGrid img{
@@ -522,4 +534,27 @@ html.has-scroll-smooth { overflow: hidden;  /* fix */ position: fixed; left: 0; 
     height: 100%;
     pointer-events: none;
     opacity: 0.6;
+}
+
+footer{
+    margin-top:15vh;
+    display: flex;
+    justify-content: space-between;
+}
+
+footer div{
+    display: flex;
+}
+
+.footerContacts{
+    width:20vw;
+    justify-content: space-around;
+}
+
+footer p{
+    font-size: calc(20px + 0.2vw);
+}
+footer a{
+    text-decoration: none;
+    color: var(--secondColor);
 }
